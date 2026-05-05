@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Velocity Corporate Training Centre Pune</title>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="32" fill="#1a2a5e"/>
+
+  <!-- Outer V (large white) -->
+  <polygon points="40,60 200,310 360,60 310,60 200,230 90,60" fill="white"/>
+
+  <!-- Inner V cutout / second V shape (creates double-V effect) -->
+  <polygon points="110,60 200,210 290,60 255,60 200,170 145,60" fill="#1a2a5e"/>
+
+  <!-- Red flame / teardrop at top center between the two V peaks -->
+  <ellipse cx="200" cy="52" rx="14" ry="22" fill="#cc1f1f"/>
+  <polygon points="186,58 214,58 200,20" fill="#cc1f1f"/>
+
+  <!-- VELOCITY text -->
+  <text x="200" y="348"
+    font-family="Arial Black, Arial, sans-serif"
+    font-weight="900"
+    font-size="52"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="4">VELOCITY</text>
+
+  <!-- Subtitle italic -->
+  <text x="200" y="378"
+    font-family="Georgia, serif"
+    font-style="italic"
+    font-size="18"
+    fill="white"
+    text-anchor="middle"
+    letter-spacing="1">Corporate Training Center Pune</text>
+</svg>
