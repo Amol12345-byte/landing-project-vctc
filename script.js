@@ -88,12 +88,7 @@ if (form) {
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Please wait...';
         btn.disabled = true;
 
-        // Step 1: Fire Meta Pixel Lead event
-        if (typeof fbq === 'function') {
-            fbq('track', 'Lead');
-        }
-
-        // Step 2: Send data to Google Sheets (no-cors, silent fail)
+        // Step 1: Send data to Google Sheets (no-cors, silent fail)
         try {
             await fetch(SHEET_WEBHOOK, {
                 method: 'POST',
@@ -103,6 +98,11 @@ if (form) {
             });
         } catch (err) {
             console.warn('Sheet save failed:', err);
+        }
+
+        // Step 2: Fire Meta Pixel Lead event AFTER successful form submit + sheet save
+        if (typeof fbq === 'function') {
+            fbq('track', 'Lead');
         }
 
         // Step 3: Reset button immediately
