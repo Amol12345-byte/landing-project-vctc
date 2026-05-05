@@ -2542,12 +2542,12 @@ html {
 
 /* Row 1 — left to right (default) */
 .reviews-row-1 {
-    animation: scrollReviewsLTR 60s linear infinite;
+    animation: scrollReviewsLTR 120s linear infinite;
 }
 
 /* Row 2 — right to left (reverse) */
 .reviews-row-2 {
-    animation: scrollReviewsRTL 60s linear infinite;
+    animation: scrollReviewsRTL 150s linear infinite;
 }
 
 .reviews-row-1:hover,
