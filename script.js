@@ -322,8 +322,9 @@ window.addEventListener('load', () => {
 
 // ===== REVIEW IMAGES INFINITE SCROLL CLONE =====
 (function () {
-    const scroll = document.getElementById('reviewsScroll');
-    if (!scroll) return;
-    const cards = Array.from(scroll.children);
-    cards.forEach(card => scroll.appendChild(card.cloneNode(true)));
+    // Clone both rows for seamless infinite loop
+    document.querySelectorAll('.reviews-row-1, .reviews-row-2').forEach(scroll => {
+        const cards = Array.from(scroll.children);
+        cards.forEach(card => scroll.appendChild(card.cloneNode(true)));
+    });
 })();
