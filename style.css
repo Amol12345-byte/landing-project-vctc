@@ -2101,120 +2101,70 @@ html {
 @media (max-width: 900px) {
     .hero-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 28px;
     }
-
-    .hero-form-wrapper {
-        max-width: 480px;
-    }
-
-    .nav-links,
-    .nav-cta {
-        display: none;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
+    .hero-form-wrapper { max-width: 100%; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
     .nav-links.open {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-        background: var(--bg);
-        padding: 20px;
-        gap: 16px;
+        top: 70px; left: 0; right: 0;
+        background: #fff;
+        padding: 20px; gap: 16px;
         border-bottom: 1px solid var(--card-border);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        z-index: 999;
     }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .salary-highlight {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .social-proof-popup {
-        left: 12px;
-        right: 12px;
-        max-width: none;
-        bottom: 80px;
-    }
+    .contact-grid { grid-template-columns: 1fr; }
+    .salary-highlight { flex-direction: column; gap: 16px; }
+    .social-proof-popup { left: 12px; right: 12px; max-width: none; bottom: 80px; }
+    .course-detail-top { flex-direction: column; }
+    .syllabus-grid { grid-template-columns: 1fr; }
+    .detail-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 16px; flex-wrap: wrap; }
+    .hero-grid { align-items: start; }
 }
 
 @media (max-width: 600px) {
-    .hero-stats {
-        gap: 20px;
-    }
-
-    .hero-cta-group {
-        flex-direction: column;
-    }
-
-    .hero-cta-group .btn {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .courses-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .learn-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .features-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .placement-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonials-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links {
-        justify-content: center;
-    }
-
-    .pain-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .course-info-bar {
-        gap: 20px;
-    }
-
-    .video-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .offer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .announcement-scroll span {
-        padding: 0 32px;
-        font-size: 0.75rem;
-    }
-
-    .live-viewers {
-        font-size: 0.7rem;
-        padding: 5px 12px;
-    }
+    .hero { padding: 108px 0 32px; }
+    h1 { font-size: clamp(1.7rem, 7vw, 2.4rem); }
+    h2 { font-size: clamp(1.4rem, 5vw, 2rem); }
+    .hero-stats { gap: 12px; }
+    .stat-num { font-size: 1.2rem; }
+    .hero-cta-group { flex-direction: column; }
+    .hero-cta-group .btn { width: 100%; justify-content: center; }
+    .courses-grid { grid-template-columns: 1fr; }
+    .course-tabs, .course-nav { gap: 8px; }
+    .course-tab, .course-detail-tab { padding: 8px 14px; font-size: 0.8rem; }
+    .features-grid { grid-template-columns: 1fr; }
+    .pain-grid { grid-template-columns: 1fr; }
+    .trusted-logo-item { padding: 6px 14px; }
+    .contact-map-card { padding: 18px; }
+    .footer-content { flex-direction: column; text-align: center; gap: 16px; }
+    .footer-links { justify-content: center; flex-wrap: wrap; gap: 16px; }
+    .footer-logo { justify-content: center; }
+    .form-grid { grid-template-columns: 1fr; }
+    .lead-form { padding: 16px; }
+    .announcement-scroll span { padding: 0 24px; font-size: 0.75rem; }
+    section { padding: 36px 0; }
+    .section-header { margin-bottom: 24px; }
+    .offer-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .review-img-card { width: 200px; }
+    .review-img-card img { height: 240px; }
+    .testimonial-card { width: 280px; padding: 18px; }
+    .syllabus-grid { grid-template-columns: 1fr; gap: 12px; }
+    .cta-buttons { flex-direction: column; align-items: center; }
+    .cta-buttons .btn { width: 100%; justify-content: center; }
+    .sticky-cta a { font-size: 0.85rem; padding: 12px; }
+    .ty-modal { padding: 28px 18px 22px; margin: 12px; }
+    .ty-modal h2 { font-size: 1.3rem; }
+    .ty-date { font-size: 1.1rem; }
+    .live-viewers { font-size: 0.7rem; padding: 5px 12px; }
+    .hero-form-wrapper { box-shadow: 0 8px 30px rgba(37,99,235,0.1); }
+    .badge { font-size: 0.72rem; padding: 6px 14px; }
+    .container { padding: 0 16px; }
 }
 
 /* ===== THANK YOU MODAL ===== */
