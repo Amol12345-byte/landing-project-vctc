@@ -192,6 +192,9 @@ window.addEventListener('load', () => {
     const hash = window.location.hash.slice(1);
     if (hash && document.getElementById(hash)) {
         activateCourseTab(hash);
+    } else {
+        // Default to ATT as first active course
+        activateCourseTab('course-att');
     }
 });
 

@@ -2359,10 +2359,11 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 16px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;
+    overflow-y: auto;
 }
 
 .ty-overlay.active {
@@ -2373,15 +2374,16 @@ html {
 .ty-modal {
     background: #ffffff;
     border: 1px solid var(--card-border);
-    border-radius: 24px;
-    padding: 48px 40px 36px;
-    max-width: 480px;
+    border-radius: 20px;
+    padding: 32px 28px 24px;
+    max-width: 460px;
     width: 100%;
     text-align: center;
     position: relative;
     transform: translateY(30px) scale(0.96);
     transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    margin: auto;
 }
 
 .ty-overlay.active .ty-modal {
@@ -2421,8 +2423,11 @@ html {
 
 .ty-modal h2 {
     font-size: 1.7rem;
-    color: var(--white);
+    color: #111827;
     margin-bottom: 10px;
+}
+
+margin-bottom: 10px;
 }
 
 .ty-batch {
@@ -2506,12 +2511,49 @@ html {
 
 @media (max-width: 480px) {
     .ty-modal {
-        padding: 36px 24px 28px;
+        padding: 24px 16px 20px;
+        border-radius: 16px;
     }
 
     .ty-modal h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
+
+    .ty-icon {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .ty-badge {
+        font-size: 0.78rem;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+    }
+
+    .ty-date {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .ty-sub {
+        font-size: 0.82rem;
+        margin-bottom: 18px;
+    }
+
+    .btn-whatsapp {
+        padding: 13px 16px;
+        font-size: 0.9rem;
+    }
+
+    .ty-note {
+        font-size: 0.72rem;
+    }
+
+    .ty-close {
+        font-size: 0.8rem;
+        padding: 7px 16px;
+    }
+}
 }
 
 /* ===== COURSE CARD LEVEL TAG ===== */
